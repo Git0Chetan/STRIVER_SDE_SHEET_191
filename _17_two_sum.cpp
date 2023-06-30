@@ -5,7 +5,6 @@
 // Note: You are not allowed to use the same element twice. Example: If the target is equal to 6 and num[1] = 3, then nums[1] + nums[1] = target is not a solution.
 
 
-
 // #include <bits/stdc++.h>
 // using namespace std;
 
