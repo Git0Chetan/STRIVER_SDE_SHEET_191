@@ -18,6 +18,11 @@ struct ListNode {
      ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
+//brute force : calculate the length and then delete the nth node:
+
+
+
+//OPtimised approach using two pointers 
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
