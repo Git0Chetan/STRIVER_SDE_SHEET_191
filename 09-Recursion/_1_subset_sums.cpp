@@ -6,6 +6,7 @@
 //similar problem.
 //Leetcode:78  link:https://leetcode.com/problems/subsets/description/ 
 
+//approach is just try to solve the problem in sub-parts i.e. divide and conquere
 
 #include<iostream>
 using namespace std;
