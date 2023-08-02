@@ -2,7 +2,7 @@
 //The NSE for an element x is the first smaller element on the right side of x in the array. 
 //Elements for which no smaller element exist (on the right side), consider NSE as -1. 
 
-//no leetcode;
+//leetcode:1475    link:https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/description/
 //codeStudio   https://www.codingninjas.com/studio/problems/next-smaller-element_1112581?leftPanelTab=0
 //gfg  https://practice.geeksforgeeks.org/problems/fab3dbbdce746976ba35c7b9b24afde40eae5a04/1?utm_source=geeksforgeeks&utm_medium=article_practice_tab&utm_campaign=article_practice_tab
 
