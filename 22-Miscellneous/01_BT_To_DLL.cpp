@@ -5,6 +5,7 @@
 //The first node of Inorder traversal (leftmost node in BT) must be the head node of the DLL.
 //Note: H is the height of the tree and this space is used implicitly for the recursion stack.
 
+//GFG: link:https://practice.geeksforgeeks.org/problems/binary-tree-to-dll/1?utm_source=geeksforgeeks&utm_medium=ml_article_practice_tab&utm_campaign=article_practice_tab
 
 
 #include<iostream>
