@@ -9,31 +9,31 @@
 #include<iostream>
 using namespace std;
 
-class Solution {
-public:
-    int strStr(string hay, string need) {
-        int pos=-1;
-        for(int i=0;i<hay.length();i++){
-            pos=i;
-            int j=0;
-            int k=i;
-            while(hay[k]==need[j]){
-                k++;
-                j++;
-                if(j==need.length()){
-                    return pos;
-                }
-            }
+//Brute force
+// class Solution {
+// public:
+//     int strStr(string hay, string need) {
+//         int pos=-1;
+//         for(int i=0;i<hay.length();i++){
+//             pos=i;
+//             int j=0;
+//             int k=i;
+//             while(hay[k]==need[j]){
+//                 k++;
+//                 j++;
+//                 if(j==need.length()){
+//                     return pos;
+//                 }
+//             }
 
-            pos=-1;
-        }
-        return pos;
-    }
-};
+//             pos=-1;
+//         }
+//         return pos;
+//     }
+// };
 
 
 //Optimised
-
 // class Solution {
 // public:
 //     int strStr(string haystack, string needle) {
@@ -52,3 +52,41 @@ public:
 //         return start_idx;
 //     }
 // };
+
+
+//Using Z_function:
+class solution{
+    public:
+    vector <int> search(string pat, string txt)
+        {
+            
+            int m=txt.length();
+            int n=pat.length();
+            
+            string ns=pat+"#"+txt;
+            vector<int>z;
+            for(int i=0;i<ns.length();i++){
+                if(i<=n){
+                    z.push_back(0);
+                }
+                else{
+                    int left=0;
+                    int right=i;
+                    while(right<ns.length() && ns[left]==ns[right]){
+                        left++;
+                        right++;
+                    }
+                    z.push_back(left);
+                }
+            }
+            
+            vector<int>result;
+            for(int i=0;i<ns.length();i++){
+                if(z[i]==n){
+                    result.push_back(i-n);
+                }
+            }
+            
+            return result;
+        }
+};
